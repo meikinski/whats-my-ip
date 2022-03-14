@@ -12,6 +12,7 @@ export default function Country(props) {
     
     let name = props.name.toLowerCase();
     let url = `https://restcountries.com/v3.1/alpha/${name}`;
+    
 
     const [show, setShow] = useState(false);
     const [target, setTarget] = useState(null);
@@ -34,7 +35,7 @@ export default function Country(props) {
        }
      };
      fetchCountryData();
-   }, []);
+   }, [url] );
  
    console.log(countryData);
 

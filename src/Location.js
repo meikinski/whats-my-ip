@@ -45,7 +45,7 @@ export default function Location () {
        
        <MyMap lat={data.location.lat} lng={data.location.lng}/>
        <div></div>
-        <Country name={data.location.country}/>
+        <Country name={data.location.country} ip={data.ip}/>
         </>
       }
       </div>
